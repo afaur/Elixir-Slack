@@ -1,3 +1,6 @@
+[![Build
+Status](https://api.travis-ci.org/afaur/Elixir-Slack.svg?branch=master)](https://travis-ci.org/afaur/Elixir-Slack)
+
 # Elixir-Slack
 
 This is a work in progress Slack [Real Time Messaging API] client for Elixir.
