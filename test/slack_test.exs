@@ -16,7 +16,7 @@ defmodule SlackTest do
   end
 
   test "handle_message returns state by default" do
-    refute Bot.handle_message(nil, nil, 1) == {:ok, 1}
+    assert Bot.handle_message(nil, nil, 1) == {:ok, 1}
   end
 
   test "send_raw sends slack formatted to client" do
@@ -61,7 +61,7 @@ defmodule SlackTest do
     assert slack.bots     == %{"123" => %{id: "123"}}
     assert slack.channels == %{"123" => %{id: "123"}}
     assert slack.groups   == %{"123" => %{id: "123"}}
-    refute slack.users    == %{"123" => %{id: "123"}}
+    assert slack.users    == %{"123" => %{id: "123"}}
 
     assert state == 1
   end
